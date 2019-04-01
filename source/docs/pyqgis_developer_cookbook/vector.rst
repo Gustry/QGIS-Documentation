@@ -329,7 +329,7 @@ To delete some features, just provide a list of their feature IDs
   if caps & QgsVectorDataProvider.DeleteFeatures:
       res = layer.dataProvider().deleteFeatures([5, 10])
 
-Modify Features
+Modify Features without an Editing Buffer
 ---------------
 
 It is possible to either change feature's geometry or to change some attributes.
@@ -447,7 +447,7 @@ If any exception occurs, it will :func:`rollBack()` all the changes.
 In case a problem is encountered within :func:`commitChanges()` (when the method
 returns False) a :class:`QgsEditError` exception will be raised.
 
-Adding and Removing Fields
+Adding and Removing Fields without Editing Buffer
 --------------------------
 
 To add fields (attributes), you need to specify a list of field definitions.
@@ -459,7 +459,7 @@ For deletion of fields just provide a list of field indexes.
 
  if caps & QgsVectorDataProvider.AddAttributes:
      res = layer.dataProvider().addAttributes(
-         [QgsField("mytext", QVariant.String),
+         [QgsField("mytext", QVariant.Stri  ng),
          QgsField("myint", QVariant.Int)])
 
  if caps & QgsVectorDataProvider.DeleteAttributes:
