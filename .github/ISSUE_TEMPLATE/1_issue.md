@@ -1,3 +1,9 @@
+---
+name: 📖 Documentation
+about: Report problems about the documentation only.
+
+---
+
 ## Description
 
 <!--
@@ -12,7 +18,5 @@ We try to keep the overhead as small as possible and appreciate if you help us t
 
 Replace the space between square brackets by an x if it's appropriate.
 -->
-- [ ] I'm aware this repository is about QGIS Documentation and the issue I'm reporting is related to its usage.
-If it's related to QGIS application or website, please refer to http://qgis.org/en/site/getinvolved/development/bugreporting.html
-for the right issue tracker or to the [support channels](http://qgis.org/en/site/forusers/support.html)
+
 - [ ] I have added a link to the page concerned by the issue
